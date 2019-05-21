@@ -1,0 +1,9 @@
+[submodule "LibraryManager-WS-P10"]
+	path = LibraryManager-WS-P10
+	url = https://github.com/getantazri/LibraryManager-WS-P10
+[submodule "LibraryManager-WebApp-P10"]
+	path = LibraryManager-WebApp-P10
+	url = https://github.com/getantazri/LibraryManager-WebApp-P10
+[submodule "LibraryManager-Batch-P10"]
+	path = LibraryManager-Batch-P10
+	url = https://github.com/getantazri/LibraryManager-Batch-P10

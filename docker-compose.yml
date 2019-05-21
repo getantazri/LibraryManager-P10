@@ -1,0 +1,43 @@
+version: "3.7"
+services:
+  db: 
+    build: 
+      context: ./db
+    image: db
+    container_name: db
+    ports:
+      - "5433:5432"
+    networks:
+      - lmnetwork
+     
+  webservice:
+    build: 
+      context:  ./LibraryManager-WS
+    image: webservice
+    container_name: webservice
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_NAME=librarymanager_db
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=admin
+    ports:
+      - "8090:8080"
+    depends_on:
+      - db
+    networks:
+      - lmnetwork
+
+  webapp:
+    build: 
+      context:  ./LibraryManager-WebApp
+    image: webapp
+    container_name: webapp
+    ports:
+      - "8888:8080"
+    depends_on:
+      - webservice
+    networks:
+      - lmnetwork
+
+networks:
+  lmnetwork:
