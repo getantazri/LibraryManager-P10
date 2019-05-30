@@ -12,7 +12,7 @@ services:
      
   webservice:
     build: 
-      context:  ./LibraryManager-WS
+      context:  ./LibraryManager-WS-P10
     image: webservice
     container_name: webservice
     environment:
@@ -27,9 +27,18 @@ services:
     networks:
       - lmnetwork
 
+  lmcompile:
+    build:
+      context: ./compile
+    image:
+      lmcompile
+    container_name: lmcompile
+    networks:
+      - lmnetwork
+
   webapp:
     build: 
-      context:  ./LibraryManager-WebApp
+      context:  ./LibraryManager-WebApp-P10
     image: webapp
     container_name: webapp
     ports:
