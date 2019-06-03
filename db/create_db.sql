@@ -9,6 +9,7 @@ CREATE TABLE public.member (
                 password VARCHAR NOT NULL,
                 email VARCHAR NOT NULL,
                 phone VARCHAR NOT NULL,
+                status VARCHAR NOT NULL,
                 CONSTRAINT member_pk PRIMARY KEY (id)
 );
 

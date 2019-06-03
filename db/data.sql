@@ -35,11 +35,11 @@ VALUES
 	(8, 'Fondation', '1951-01-01', 8, 2, 6);
 	
 INSERT INTO public.member
-	(id, firstname, lastname, login, password, email, phone)
+	(id, firstname, lastname, login, password, email, phone, status)
 VALUES 
-	(1, 'John', 'Doe', 'jdoe', '$2a$04$7fQIIE3egr4HIWCN0n5V9uTsSJxQKIDJ6r0QO11ELnwoiOdlquDx.', 'atelier.java.test@gmail.com', '0123456789'),
-	(2, 'Barack', 'Obama', 'bobama', '$2a$04$zQ.8U1N3ExvyjPNkYrolv.4E3fvVBVTzJVQNUYehgPzTbnalA6i6e', 'atelier.java.test@gmail.com', '0123456789'),
-	(3, 'Admin', 'Root', 'admin', '$2a$04$1gORAyfrEZ3Wze6gq70QJu75chOwQ6Fxh8n3Cj/KBEZaugK9VdsdK', 'atelier.java.test@gmail.com', '0123456789');
+	(7, 'John', 'Doe', 'jdoe', '$2a$04$7fQIIE3egr4HIWCN0n5V9uTsSJxQKIDJ6r0QO11ELnwoiOdlquDx.', 'antz.content@gmail.com', '0123456789', 'member'),
+	(8, 'Barack', 'Obama', 'bobama', '$2a$04$zQ.8U1N3ExvyjPNkYrolv.4E3fvVBVTzJVQNUYehgPzTbnalA6i6e', 'return.netha2k4@gmail.com', '0123456789', 'member'),
+	(9, 'Admin', 'Root', 'admin', '$2a$04$1gORAyfrEZ3Wze6gq70QJu75chOwQ6Fxh8n3Cj/KBEZaugK9VdsdK', 'atelier.java.test@gmail.com', '0123456789', 'admin');
 
 INSERT INTO public.loan
 	(id, date_begin, date_end, date_return, extended, returned, member_id, book_id)

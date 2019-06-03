@@ -3,6 +3,13 @@ Tous les changements opérés sur ce projet seront listés sur ce fichier par ca
 
 ## [Unreleased]
 
+## [1.0.5] - 2019-06-03
+### Evolutions
+- Mise à jour du modèle `Member` de Hibernate : ajout d'un attribut "**STATUS**"
+- Mise à jour de l'entité `member.xsd` pour la génération des WebServices
+- Ajout d'un espace d'administration : ajout de `admin.jsp` et de `AdminController`
+- Automatisation du Batch via les annotations `@Scheduled` (`SendMailJob`) et `@EnbleScheduling` (`LibrarymanagerBatchApplication`) sur une granularité quotidienne 
+
 ## [1.0.4] - 2019-06-02
 ### Evolutions
 - Ajout d'une objet Extension généré par *WSDL2JAVA* via le fichier `extension.xsd` dans le webservice **LoanManagement**
