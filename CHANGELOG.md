@@ -3,6 +3,18 @@ Tous les changements opérés sur ce projet seront listés sur ce fichier par ca
 
 ## [Unreleased]
 
+## [1.0.6] - 2019-06-05
+### Evolutions
+- Changement de style des listes : ajout d'une bordure inférieure pour améliorer la lecture
+- Ajout d'un espace d'administration (accéssible via la navigation avec le statut **admin**)
+- Ajout d'une page dédiée à la gestion des utilisateurs `members.jsp`
+- Ajout des fonctionnalités CRUD pour les membres avec des méthodes `add`, `update`et `delete` via le webservice **MemberManagement**
+
+### Mise à jour
+- Mise à jour de l'entité `Member`avec l'ajout d'un attribut **status** (Modifications effectuées dans les fichiers `member.xsd` et `Member` dans la couche **Model**)
+- Mise à jour des données de test du fichier `data.sql`pour y inclure l'attribut `status`
+- Mise à jour du script de création des tables `create_table.sql`pour y inclure les modifications de l'entité **member**
+
 ## [1.0.5] - 2019-06-03
 ### Evolutions
 - Automatisation du Batch via les annotations `@Scheduled` (`SendMailJob`) et `@EnbleScheduling` (`LibrarymanagerBatchApplication`) sur une granularité quotidienne 
