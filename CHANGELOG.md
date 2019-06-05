@@ -3,6 +3,14 @@ Tous les changements opérés sur ce projet seront listés sur ce fichier par ca
 
 ## [Unreleased]
 
+## [1.0.7] - 2019-06-05
+### Correctifs
+- Correction du formulaire dans `search.jsp` empêchant l'accès à la page (WebApp)
+- Correction de l'opération de récupération du nombre de copies disponibles pour un livre (WebService)
+
+### Evolutions
+- Ajout d'une méthode permettant de récupérer les **Loan** en cours dans la couche Business (WebService)
+
 ## [1.0.6] - 2019-06-05
 ### Evolutions
 - Ajout d'un espace d'administration (accéssible via la navigation avec le statut **admin**)

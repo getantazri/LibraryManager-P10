@@ -161,7 +161,7 @@ Le POM.xml du module Model est à configurer avec l'adresse *http://webservice:8
 
 Aucune image n'est nécessaire pour la compilation via Maven. Placez-vous dans le dossier de l'application web "*LibraryManager-WebApp*" et lancez la commande :
 
-    docker run --rm -d -v "$PWD":/usr/local/lmwebapp --network lmnetwork --name lmcompile -w /usr/local/lmwebapp maven:3.6.0-jdk-8 mvn clean package
+    docker run --rm -v "$PWD":/usr/local/lmwebapp --network lmnetwork --name lmcompile -w /usr/local/lmwebapp maven:3.6.0-jdk-8 mvn clean package
 
 Cette commande va copier le dossier de l'application en tant que *volume* et lancer *mvn clean package* dans le dossier indiqué par le paramètre "*-w*".
 
