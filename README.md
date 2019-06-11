@@ -196,4 +196,5 @@ Dans un Terminal, déplacez-vous jusque dans le dossier *LibraryManager* et util
 L'ensemble des containers sur les ports définis dans les fichiers de configuration XML des différentes applications.
 
 
-
+## Evolutions
+L'ensemble des corrections et évolutions sont énumérées dans le fichier `CHANGELOG.md`
