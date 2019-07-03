@@ -2,6 +2,12 @@
 Tous les changements opérés sur ce projet seront listés sur ce fichier par catégorie de modification.
 
 ## [Unreleased]
+## [1.0.7] - 2019-06-30
+### Correctifs
+- Modification des attributs du model Spring pour ajouter un nouveau membre pour corriger les conflits avec d'autres attributs possédant le même nom (*member*)
+
+### Evolutions
+- Ajout d'une classe *HashPasswordUtil* pour permettre de hasher le mot de passe d'un nouvel utilisateur avant d'envoyer la requête au webservice
 
 ## [1.0.7] - 2019-06-05
 ### Correctifs

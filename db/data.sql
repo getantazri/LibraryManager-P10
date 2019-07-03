@@ -39,10 +39,14 @@ INSERT INTO public.member
 VALUES 
 	(1, 'John', 'Doe', 'jdoe', '$2a$04$7fQIIE3egr4HIWCN0n5V9uTsSJxQKIDJ6r0QO11ELnwoiOdlquDx.', 'antz.content@gmail.com', '0123456789', 'member'),
 	(2, 'Barack', 'Obama', 'bobama', '$2a$04$zQ.8U1N3ExvyjPNkYrolv.4E3fvVBVTzJVQNUYehgPzTbnalA6i6e', 'return.netha2k4@gmail.com', '0123456789', 'member'),
-	(3, 'Admin', 'Root', 'admin', '$2a$04$1gORAyfrEZ3Wze6gq70QJu75chOwQ6Fxh8n3Cj/KBEZaugK9VdsdK', 'atelier.java.test@gmail.com', '0123456789', 'admin');
+	(3, 'Admin', 'Root', 'admin', '$2a$04$1gORAyfrEZ3Wze6gq70QJu75chOwQ6Fxh8n3Cj/KBEZaugK9VdsdK', 'atelier.java.test@gmail.com', '0123456789', 'admin'),
+	(4, 'Sandy', 'McGallath', 'smcgallath', '$2a$04$1gORAyfrEZ3Wze6gq70QJu75chOwQ6Fxh8n3Cj/KBEZaugK9VdsdK', 'sandy.mcgallath@ymail.fr', '0123456789', 'member');
 
 INSERT INTO public.loan
 	(id, date_begin, date_end, date_return, extended, returned, member_id, book_id)
 VALUES 
 	(1, '2018-11-17', '2018-12-17', '2018-12-17', false, false, 1, 1),
-	(2, '2018-10-25', '2018-11-25', '2018-12-17', false, false, 2, 2);
+	(2, '2018-10-25', '2018-11-25', '2018-12-17', false, false, 2, 2),
+	(3, '2018-10-25', '2018-11-25', '2018-12-17', false, false, 2, 3),
+	(4, '2018-10-25', '2018-11-25', '2018-12-17', false, false, 3, 4),
+	(5, '2018-10-25', '2018-11-25', '2018-12-17', false, false, 3, 5);
